@@ -5,7 +5,7 @@
 
 export const gigasecond = (moment) => {
   const momentInTime = new Date(moment).getTime()
-  const momentInGiga = momentInTime + 1000000000000
+  const momentInGiga = momentInTime + Math.pow(10, 12)
   return new Date(momentInGiga)
 };
 
